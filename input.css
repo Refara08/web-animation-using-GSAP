@@ -6,6 +6,10 @@
   @apply transition duration-300 ease-linear;
 }
 
+.container-me {
+  @apply max-w-[80vw] lg:max-w-[60vw] mx-auto px-4;
+}
+
 .links .nav-link {
   @apply mx-2 font-semibold py-2 px-3 rounded hover:bg-black hover:text-white transition-300ms;
 }
@@ -19,7 +23,7 @@
 }
 
 .card-img {
-  @apply h-[40%] w-full object-cover;
+  @apply h-32 md:h-48 w-full object-cover;
 }
 
 .card-content {

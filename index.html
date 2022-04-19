@@ -20,23 +20,22 @@
     <title>GSAP | refara.code</title>
   </head>
   <body class="flex flex-col h-[100vh]">
-    <nav
-      id="navbar"
-      class="bg-gray-100 shadow-md flex justify-between items-center py-4 px-5 sticky top-0"
-    >
-      <div class="logo">
-        <a class="text-3xl font-semibold" href="#">refara.code</a>
-      </div>
-      <div class="links">
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Portfolio</a>
-        <a href="#" class="nav-link">Contacts</a>
+    <nav id="navbar" class="bg-gray-100 shadow-md py-4 sticky top-0 z-40">
+      <div class="container-me flex justify-between items-center">
+        <div class="logo">
+          <a class="text-3xl font-semibold" href="#">refara.code</a>
+        </div>
+        <div class="links">
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Portfolio</a>
+          <a href="#" class="nav-link">Contacts</a>
+        </div>
       </div>
     </nav>
-    <main class="flex grow">
-      <section class="main flex-[1] py-8 px-4 max-w-[80vw] mx-auto">
-        <h1 class="text-3xl font-semibold mb-4">Hello!, I am Gema Refantero</h1>
-        <p>
+    <main class="container-me">
+      <section id="main" class="main flex-[1] pb-8 pt-14">
+        <h1 class="text-4xl font-semibold mb-4">Hello!, I am Gema Refantero</h1>
+        <p class="w-[60%]">
           Welcome to my portfolio page. I'm a self-taught react js web
           developer, and I'm interested in UI aspect of the website and animate
           it!.
@@ -46,7 +45,16 @@
         >
           Explore
         </button>
-        <div class="cards my-12 flex justify-evenly items-stretch gap-4">
+      </section>
+      <section id="bunch-o-cards" class="my-12">
+        <div class="mb-5">
+          <h2 class="text-3xl">This is what I've been made</h2>
+          <p>just kidding</p>
+        </div>
+
+        <!-- cards-------- -->
+
+        <div class="cards flex justify-evenly items-stretch gap-4">
           <div class="card">
             <img class="card-img" src="./img/noodle.jpg" alt="noodle" />
             <div class="card-content">
@@ -94,9 +102,12 @@
         </div>
       </section>
     </main>
+
+    <!-- Footerrr ------------------------------------------------- -->
+
     <footer
       id="footer"
-      class="bg-black text-white px-8 flex flex-col justify-center"
+      class="bg-black text-white px-8 flex flex-col justify-center z-40"
     >
       <div class="footer-links py-8 flex justify-around items-center flex-[1]">
         <div class="logo">
