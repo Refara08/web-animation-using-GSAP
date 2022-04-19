@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-300ms {
+  @apply transition duration-300 ease-linear;
+}
+
+.links .nav-link {
+  @apply mx-2 font-semibold py-2 px-3 rounded hover:bg-black hover:text-white transition-300ms;
+}
+
+.aside {
+  @apply bg-blue-100 w-[15vw];
+}
+
+.card {
+  @apply flex flex-col bg-gray-200 shadow-lg rounded-lg overflow-hidden;
+}
+
+.card-img {
+  @apply h-[40%] w-full object-cover;
+}
+
+.card-content {
+  @apply flex-[1] p-4 flex flex-col items-center justify-around;
+}
+
+.card-content a {
+  @apply font-semibold border-b-2 hover:border-gray-600 hover:shadow-md py-2 px-4 rounded transition-300ms;
+}
+
+.card-text h3 {
+  @apply text-2xl font-semibold mb-3;
+}
